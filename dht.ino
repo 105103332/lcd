@@ -17,7 +17,7 @@ void loop(){
   while(Serial.available()) {
     a = Serial.readString();// read the incoming data as string
     if (a == Sch_no) {
-      DHT.read11(dht_dpin);                    //�hlibrary�̭���DHT.read11  
+      DHT.read11(dht_dpin);                     
       Serial.print("Humidity = ");   
       Serial.print(DHT.humidity);   
       Serial.print("% ");   
